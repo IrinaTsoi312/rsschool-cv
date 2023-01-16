@@ -4,7 +4,7 @@
 ---
 ### **Contacts**
 
-**E-mail:** irinatsoi312@gmail.com
+**E-mail:** irinatsoi312@gmail.com<br>
 **Telegram:** @IrinaT312
 
 ---
@@ -33,7 +33,8 @@ I have an ability and desire to learn, expand my current knowledge and walk thro
 ### **Code Examples**
 *from CodeWar*
 
-[Create Phone Number](https://www.codewars.com/kata/525f50e3b73515a6db000b83)
+**Create Phone Number**
+*Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.*
 
 ```
 function createPhoneNumber(numbers){
@@ -49,7 +50,8 @@ function createPhoneNumber(numbers){
 }
 ```
 
-[Two to One](https://www.codewars.com/kata/5656b6906de340bd1b0000ac)
+**Two to One**
+*Take 2 strings s1 and s2 including only letters from a to z. Return a new sorted string, the longest possible, containing distinct letters - each taken only once - coming from s1 or s2.*
 
 ```
 function longest(s1, s2) {
@@ -61,7 +63,10 @@ function longest(s1, s2) {
 }
 ```
 
-[Detect Pangram](https://www.codewars.com/kata/545cedaa9943f7fe7b000048)
+**Detect Pangram**
+*A pangram is a sentence that contains every single letter of the alphabet at least once. For example, the sentence "The quick brown fox jumps over the lazy dog" is a pangram, because it uses the letters A-Z at least once (case is irrelevant).
+
+Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.*
 
 ```
 function isPangram(string){
