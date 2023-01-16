@@ -4,11 +4,188 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <title>Curriculum Vitae</title>
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img class="avatar" id="logo" src="/rsschool-cv/images/avataaars.png" alt="avatar image" width="120" height="120">
+                    <div class="header__heading">
+                        <h1 class="header__name">Irina Tsoi</h1>
+                        <h3 class="header__job">Front-End Developer</h3>
+                    </div>
+                </div>
+                <ul class="nav">
+                    <li class="nav-link">
+                        <a href="#contacts">Contacts</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#about">About Me</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#code">Code Examples</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#languages">Languages</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="contacts">
+                <h2 class="heading">
+                    <strong>Contacts</strong>
+                </h2>
+                <table>
+                    <tr>
+                        <td>Email:</td>
+                        <td class="pad">
+                            <a href="mailto: irinatsoi312@gmail.com">irinatsoi312@gmail.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Telegram:</td>
+                        <td class="pad">
+                            <a href="https://t.me/IrinaT312">@IrinaT312</a>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section id="about">
+                <h2 class="heading">
+                    <strong>About Me</strong>
+                </h2>
+                <p class="about__text">
+                    My knowledge were built from self-learning, on-line courses plus a lot of time of practice.
+                </p>
+                <p class="about__text">
+                    I am responsible, effective and adaptable.
+                </p>
+                <p class="about__text">
+                    I have an ability and desire to learn, expand my current knowledge and walk through carrier pass as front-end developer.
+                </p>
+            </section>
+            <section id="skills">
+                <h2 class="heading">
+                    <strong>Skills</strong>
+                </h2>
+                <ul class="skills__list">
+                    <li class="list">
+                        HTML5, CSS
+                        <li class="style-none">
+                            <ul>
+                                <li>Bootstrap</li>
+                                <li>Tailwind</li>
+                            </ul>
+                        </li>
+                    </li>
+                    <li class="list">
+                        JavaScript
+                        <li class="style-none">
+                            <ul>
+                                <li>React JS</li>
+                            </ul>
+                        </li>
+                    </li>
+                    <li class="list">Can work with templates in Adobe Photoshop and Figma</li>
+                </ul>
+            </section>
+            <section id="code">
+                <h2 class="heading">
+                    <strong>Code Examples</strong>
+                </h2>
+                <i>from CodeWars</i>
+                <div class="code__block">
+                    <p class="code__task">
+                        <strong>Create Phone Number.</strong> Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
+                    </p>
+                    <pre class="code__example">
+                        function createPhoneNumber(numbers){
+                            let nums = numbers.join("");
+                            let tel = "(t) t-t";
+                            for(let i = 0; i &lt; 3; i++) {
+                              let n = 3;
+                              if(i >= 2) { n = 4; }
+                              tel = tel.replace("t", nums.slice(0, n));
+                              nums = nums.replace(nums.slice(0, n), "");
+                            }
+                            return tel;
+                          }
+                    </pre>
+                </div>
+                <div class="code__block">
+                    <p class="code__task">
+                        <strong>Two to One Take.</strong> 2 strings s1 and s2 including only letters from a to z. Return a new sorted string, the longest possible, containing distinct letters - each taken only once - coming from s1 or s2.
+                    </p>
+                    <pre class="code__example">
+                        function longest(s1, s2) {
+                            const newArr = [...s1.split(""), ...s2.split("")];
+                            const result = [...new Set(newArr)].sort();
+                            return result.join("");
+                          }
+                    </pre>
+                </div>
+                <div class="code__block">
+                    <p class="code__task">
+                        <strong>Detect Pangram.</strong> A pangram is a sentence that contains every single letter of the alphabet at least once. For example, the sentence “The quick brown fox jumps over the lazy dog” is a pangram, because it uses the letters A-Z at least once (case is irrelevant).
+                        Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.*
+                    </p>
+                    <pre class="code__example">
+                        function isPangram(string){
+                            let alphabet = "abcdefghijkmlnopqrstuvwxyz".split("");
+                            let str = string.toLowerCase();
+                            for(let i = 0; i &lt; alphabet.length; i++) {
+                              if(str.search(alphabet[i]) &lt; 0) {
+                                return false;
+                              }
+                            }
+                            return true;
+                          }
+                    </pre>
+                </div>
+            </section>
+            <section id="courses">
+                <h2 class="heading">
+                    Courses
+                </h2>
+                <ul>
+                    <li class="list">
+                        <a href="images/Certificate_GeekBrains.png">
+                            Certificate GeekBrains - Intensive Introduction to Programming
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="images/Certificate Netology.png">
+                            Certificate Netology - Basic HTML and CSS Course
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section id="languages">
+                <h2 class="heading">
+                    Languages
+                </h2>
+                <ul>
+                    <li class="list">
+                        <a href="images/Free-English-test-EF-SET-Quick-Check.png">English - C1-C2 level (Advanced-Proficient)</a> <a href="https://www.efset.org">EF SET</a>
+                    </li>
+                    <li class="list">
+                        Russian - Native
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <a href="#logo"><img class="arrow-up" src="images/up-arrow-svgrepo-com.svg" width="40" height="40" alt="arrow up"></a>
+    </div>
 </body>
 </html>
