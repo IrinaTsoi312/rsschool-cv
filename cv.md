@@ -1,6 +1,6 @@
 # __Irina Tsoi__
 ### __Front-End Developer__
-
+[](https://github.com/IrinaTsoi312/rsschool-cv/blob/gh-pages/images/avataaars.png)
 ---
 ### **Contacts**
 
