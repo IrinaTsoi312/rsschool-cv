@@ -96,4 +96,4 @@ function isPangram(string){
 
 + English \- C1\-C2 level (Advanced\-Proficient) [EF SET](https://www.efset.org)<br>
 [EF SET Score](https://github.com/IrinaTsoi312/rsschool-cv/blob/gh-pages/images/Free-English-test-EF-SET-Quick-Check.png)
-+ Russian \- Native
++ Russian \- Nativegit status
