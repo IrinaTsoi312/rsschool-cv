@@ -33,7 +33,7 @@ I have an ability and desire to learn, expand my current knowledge and walk thro
 ### **Code Examples**
 *from CodeWar*
 
-*[Create Phone Number]*(https://www.codewars.com/kata/525f50e3b73515a6db000b83)
+[Create Phone Number](https://www.codewars.com/kata/525f50e3b73515a6db000b83)
 
 ```
 function createPhoneNumber(numbers){
@@ -49,7 +49,7 @@ function createPhoneNumber(numbers){
 }
 ```
 
-*[Two to One]*(https://www.codewars.com/kata/5656b6906de340bd1b0000ac)
+[Two to One](https://www.codewars.com/kata/5656b6906de340bd1b0000ac)
 
 ```
 function longest(s1, s2) {
@@ -61,7 +61,7 @@ function longest(s1, s2) {
 }
 ```
 
-*[Detect Pangram]*(https://www.codewars.com/kata/545cedaa9943f7fe7b000048)
+[Detect Pangram](https://www.codewars.com/kata/545cedaa9943f7fe7b000048)
 
 ```
 function isPangram(string){
