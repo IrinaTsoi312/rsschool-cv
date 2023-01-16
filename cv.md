@@ -1,4 +1,4 @@
-# __Irina tsoi__
+# __Irina Tsoi__
 ### __Front-End Developer__
 
 ---
@@ -81,16 +81,14 @@ function isPangram(string){
 
 ### **Courses**
 
-+ Certificate GeekBrains \- Intensive Introduction to Programming<br>
-![Certificate](/rsschool-cv/images/Certificate_GeekBrains.png)<br>
++ ![Certificate GeekBrains \- Intensive Introduction to Programming](https://github.com/IrinaTsoi312/rsschool-cv/blob/gh-pages/images/Certificate_GeekBrains.png)<br>
 
-+ Certificate Netology \- Basic HTML and CSS Course<br>
-![Certificate](/rsschool-cv/images/Certificate%20Netology.png)
++ ![Certificate Netology \- Basic HTML and CSS Course](https://github.com/IrinaTsoi312/rsschool-cv/blob/gh-pages/images/Certificate%20Netology.png)
 
 ---
 
 ### **Languages**
 
 + English \- C1\-C2 level (Advanced\-Proficient) [EF SET](https://www.efset.org)<br>
-![EF SET Score](/rsschool-cv/images/Free-English-test-EF-SET-Quick-Check.png)
+![EF SET Score](https://github.com/IrinaTsoi312/rsschool-cv/blob/gh-pages/images/Free-English-test-EF-SET-Quick-Check.png)
 + Russian \- Native
