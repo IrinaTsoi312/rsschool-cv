@@ -70,6 +70,7 @@ pre {
     padding: 0 1em;
 }
 
+
 /* HEADER */
 header {
     margin: 2rem;
@@ -128,4 +129,10 @@ footer {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+}
+.github {
+    display: flex;
+}
+.github p {
+    margin: 0;
 }
