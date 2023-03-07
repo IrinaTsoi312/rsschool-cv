@@ -26,7 +26,7 @@ Capable to learn, expand my current knowledge and walk through carrier pass as f
     - Tailwind
     - BEM
 + JavaScript 
-    - React JS (basic)
+    - React JS
     - API
 + Other 
     - Adobe Photoshop 
@@ -38,7 +38,7 @@ Capable to learn, expand my current knowledge and walk through carrier pass as f
 ### **Code Examples**
 *from CodeWar*
 
-**Whose bicycle?**
+**Whose bicycle?**<br>
 *I am the father of three wonderful sons. before the beginning of the school year, I promised them that I would buy a bicycle for someone who would bring the best marks at the end of the school year. it's time to keep promises and I count on you.
 
 You have 3 input objects(school diaries) with school subjects and marks (1-10).
@@ -62,7 +62,7 @@ function whoseBicycle(diary1, diary2, diary3) {
 }
 ```
 
-**Nickname Generator**
+**Nickname Generator**<br>
 *Write a function, nicknameGenerator that takes a string name as an argument and returns the first 3 or 4 letters as a nickname.
 
 If the 3rd letter is a consonant, return the first 3 letters.
@@ -85,7 +85,7 @@ function nicknameGenerator(name){
 }
 ```
 
-**Clocky Mc Clock-Face**
+**Clocky Mc Clock-Face**<br>
 *Given the angle (in degrees) of the hour-hand, return the time in 12 hour HH:MM format. Round down to the nearest minute.*
 
 ```
@@ -114,7 +114,7 @@ let whatTimeIsIt = function(angle) {
 ---
 
 ### **Portfolio**
-[Plants](https://rolling-scopes-school.github.io/irinatsoi312-JSFEPRESCHOOL2022Q4/plants/)
+[Plants](https://rolling-scopes-school.github.io/irinatsoi312-JSFEPRESCHOOL2022Q4/plants/)<br>
 
 [Momentum app](https://rolling-scopes-school.github.io/irinatsoi312-JSFEPRESCHOOL2022Q4/momentum/)
 
