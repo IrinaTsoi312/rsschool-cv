@@ -75,7 +75,11 @@ function whoseBicycle(diary1, diary2, diary3) {
     getSum(Object.values(diary2)), 
     getSum(Object.values(diary3))
   ];
-  const results = ["I need to buy a bicycle for my first son.",  "I need to buy a bicycle for my second son.", "I need to buy a bicycle for my third son."];
+  const results = [
+    "I need to buy a bicycle for my first son.",  
+    "I need to buy a bicycle for my second son.", 
+    "I need to buy a bicycle for my third son."
+  ];
   function getSum(arr) {
     return arr.reduce((sum, int) => sum + int, 0);
   }
