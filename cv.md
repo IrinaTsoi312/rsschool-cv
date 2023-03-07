@@ -26,7 +26,8 @@ Capable to learn, expand my current knowledge and walk through carrier pass as f
     - Tailwind
     - BEM
 + JavaScript 
-    - React JS (basic)
+    - React JS
+    - ARI
 + Others 
     - Adobe Photoshop 
     - Figma
