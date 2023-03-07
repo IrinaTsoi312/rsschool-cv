@@ -38,54 +38,85 @@ Capable to learn, expand my current knowledge and walk through carrier pass as f
 ### **Code Examples**
 *from CodeWar*
 
-**Create Phone Number**
-*Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.*
+**Whose bicycle?**
+*I am the father of three wonderful sons. before the beginning of the school year, I promised them that I would buy a bicycle for someone who would bring the best marks at the end of the school year. it's time to keep promises and I count on you.
+
+You have 3 input objects(school diaries) with school subjects and marks (1-10).
+
+If two or three sons have the same highest marks, you need to choose the younger one.*
 
 ```
-function createPhoneNumber(numbers){
-  let nums = numbers.join("");
-  let tel = "(t) t-t";
-  for(let i = 0; i < 3; i++) {
-    let n = 3;
-    if(i >= 2) { n = 4; }
-    tel = tel.replace("t", nums.slice(0, n));
-    nums = nums.replace(nums.slice(0, n), "");
+function whoseBicycle(diary1, diary2, diary3) {
+  let marks = [getSum(Object.values(diary1)), getSum(Object.values(diary2)), 
+              getSum(Object.values(diary3))];
+  const results = [
+    "I need to buy a bicycle for my first son.",  
+    "I need to buy a bicycle for my second son.", 
+    "I need to buy a bicycle for my third son."
+  ];
+  function getSum(arr) {
+    return arr.reduce((sum, int) => sum + int, 0);
   }
-  return tel;
+  let res = marks.filter(num => Math.max(...marks) === num);
+  return results[marks.lastIndexOf(res[0])];
 }
 ```
 
-**Two to One**
-*Take 2 strings s1 and s2 including only letters from a to z. Return a new sorted string, the longest possible, containing distinct letters - each taken only once - coming from s1 or s2.*
+**Nickname Generator**
+*Write a function, nicknameGenerator that takes a string name as an argument and returns the first 3 or 4 letters as a nickname.
+
+If the 3rd letter is a consonant, return the first 3 letters.
+
+If the string is less than 4 characters, return "Error: Name too short".*
 
 ```
-function longest(s1, s2) {
-
-  const newArr = [...s1.split(""), ...s2.split("")];
-  const result = [...new Set(newArr)].sort();
-
-  return result.join("");
+function nicknameGenerator(name){
+  let answer;
+  if(name.length > 3) {
+    if(name[2].match(/[aeiou]/gi)) {
+      answer = name.slice(0, 4);
+    } else if (name[2].match(/[bcdfghjklmnpqrstvwxysz]/gi)) {
+      answer = name.slice(0, 3);
+    }
+  } else if(name.length < 4) {
+    answer = "Error: Name too short";
+  }
+  return answer;
 }
 ```
 
-**Detect Pangram**
-*A pangram is a sentence that contains every single letter of the alphabet at least once. For example, the sentence "The quick brown fox jumps over the lazy dog" is a pangram, because it uses the letters A-Z at least once (case is irrelevant).
-
-Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.*
+**Clocky Mc Clock-Face**
+*Given the angle (in degrees) of the hour-hand, return the time in 12 hour HH:MM format. Round down to the nearest minute.*
 
 ```
-function isPangram(string){
-  let alphabet = "abcdefghijkmlnopqrstuvwxyz".split("");
-  let str = string.toLowerCase();
-  
-  for(let i = 0; i < alphabet.length; i++) {
-    if(str.search(alphabet[i]) < 0) {
-      return false;
+let whatTimeIsIt = function(angle) {
+  let hours = Math.floor((angle * 2) / 60);
+  let minute = Math.floor((angle * 2) - hours * 60);
+    return `${addZero(toTwelve(hours))}:${addZero(minute)}`;
+  function toTwelve(num) {
+    if(num === 0) {
+      return 12;
+    } else {
+      return num;
     }
   }
-  return true;
+  function addZero(num) {
+    console.log(num.toString().length)
+    if(num.toString().length < 2) {
+      return "0" + num;
+    } else {
+      return num;
+    }
+  }
 }
 ```
+
+---
+
+### **Portfolio**
+[Plants](https://rolling-scopes-school.github.io/irinatsoi312-JSFEPRESCHOOL2022Q4/plants/)
+
+[Momentum app](https://rolling-scopes-school.github.io/irinatsoi312-JSFEPRESCHOOL2022Q4/momentum/)
 
 ---
 
