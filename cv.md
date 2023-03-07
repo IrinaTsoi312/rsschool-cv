@@ -111,7 +111,7 @@ function isPangram(string){
 
 ### **Portfolio**
 
-[Plants website](https://rolling-scopes-school.github.io/irinatsoi312-JSFEPRESCHOOL2022Q4/plants/)
+[Plants website](https://rolling-scopes-school.github.io/irinatsoi312-JSFEPRESCHOOL2022Q4/plants/)<br>
 [Momentum app](https://rolling-scopes-school.github.io/irinatsoi312-JSFEPRESCHOOL2022Q4/momentum/)
 
 ---
