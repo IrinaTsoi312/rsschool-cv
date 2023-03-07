@@ -15,7 +15,7 @@ My knowledge were built from self-learning, on-line courses plus a lot of time o
 
 I am responsible, effective and adaptable.  
 
-I have an ability and desire to learn, expand my current knowledge and walk through carrier pass as front-end developer.
+Capable to learn, expand my current knowledge and walk through carrier pass as front-end developer.
 
 ---
 
@@ -24,9 +24,14 @@ I have an ability and desire to learn, expand my current knowledge and walk thro
 + HTML5, CSS
     - Bootstrap
     - Tailwind
+    - BEM
 + JavaScript 
     - React JS (basic)
-+ Can work with templates in Adobe Photoshop and Figma
+    - API
++ Other 
+    - Adobe Photoshop 
+    - Figma
+    - Corel Draw
 
 ---
 
