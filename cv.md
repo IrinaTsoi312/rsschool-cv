@@ -15,7 +15,7 @@ My knowledge were built from self-learning, on-line courses plus a lot of time o
 
 I am responsible, effective and adaptable.  
 
-I have an ability and desire to learn, expand my current knowledge and walk through carrier pass as front-end developer.
+Capable to learn, expand my current knowledge and walk through carrier pass as front-end developer.
 
 ---
 
@@ -24,42 +24,63 @@ I have an ability and desire to learn, expand my current knowledge and walk thro
 + HTML5, CSS
     - Bootstrap
     - Tailwind
+    - BEM
 + JavaScript 
     - React JS (basic)
-+ Can work with templates in Adobe Photoshop and Figma
++ Others 
+    - Adobe Photoshop 
+    - Figma
+    - Corel Draw
 
 ---
 
 ### **Code Examples**
 *from CodeWar*
 
-**Create Phone Number**
-*Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.*
+**Clocky Mc Clock-Face**
+*Given the angle (in degrees) of the hour-hand, return the time in 12 hour HH:MM format. Round down to the nearest minute.*
 
 ```
-function createPhoneNumber(numbers){
-  let nums = numbers.join("");
-  let tel = "(t) t-t";
-  for(let i = 0; i < 3; i++) {
-    let n = 3;
-    if(i >= 2) { n = 4; }
-    tel = tel.replace("t", nums.slice(0, n));
-    nums = nums.replace(nums.slice(0, n), "");
+var whatTimeIsIt = function(angle) {
+  let hours = Math.floor((angle * 2) / 60);
+  let minute = Math.floor((angle * 2) - hours * 60);
+    return `${addZero(toTwelve(hours))}:${addZero(minute)}`;
+  function toTwelve(num) {
+    if(num === 0) {
+      return 12;
+    } else {
+      return num;
+    }
   }
-  return tel;
+  function addZero(num) {
+    console.log(num.toString().length)
+    if(num.toString().length < 2) {
+      return "0" + num;
+    } else {
+      return num;
+    }
+  }
 }
 ```
 
-**Two to One**
-*Take 2 strings s1 and s2 including only letters from a to z. Return a new sorted string, the longest possible, containing distinct letters - each taken only once - coming from s1 or s2.*
+**Whose bicycle?**
+*You have 3 input objects(school diaries) with school subjects and marks (1-10). 
+
+If two or three sons have the same highest marks, you need to choose the younger one.*
 
 ```
-function longest(s1, s2) {
-
-  const newArr = [...s1.split(""), ...s2.split("")];
-  const result = [...new Set(newArr)].sort();
-
-  return result.join("");
+function whoseBicycle(diary1, diary2, diary3) {
+  let marks = [
+    getSum(Object.values(diary1)), 
+    getSum(Object.values(diary2)), 
+    getSum(Object.values(diary3))
+  ];
+  const results = ["I need to buy a bicycle for my first son.",  "I need to buy a bicycle for my second son.", "I need to buy a bicycle for my third son."];
+  function getSum(arr) {
+    return arr.reduce((sum, int) => sum + int, 0);
+  }
+  let res = marks.filter(num => Math.max(...marks) === num);
+  return results[marks.lastIndexOf(res[0])];
 }
 ```
 
@@ -81,6 +102,13 @@ function isPangram(string){
   return true;
 }
 ```
+
+---
+
+### **Portfolio**
+
+[Plants website](https://rolling-scopes-school.github.io/irinatsoi312-JSFEPRESCHOOL2022Q4/plants/)
+[Momentum app](https://rolling-scopes-school.github.io/irinatsoi312-JSFEPRESCHOOL2022Q4/momentum/)
 
 ---
 
