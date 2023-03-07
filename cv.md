@@ -39,11 +39,11 @@ Capable to learn, expand my current knowledge and walk through carrier pass as f
 *from CodeWar*
 
 **Whose bicycle?**<br>
-*I am the father of three wonderful sons. before the beginning of the school year, I promised them that I would buy a bicycle for someone who would bring the best marks at the end of the school year. it's time to keep promises and I count on you.
+*I am the father of three wonderful sons. before the beginning of the school year, I promised them that I would buy a bicycle for someone who would bring the best marks at the end of the school year. it's time to keep promises and I count on you.*
 
-You have 3 input objects(school diaries) with school subjects and marks (1-10).
+*You have 3 input objects(school diaries) with school subjects and marks (1-10).*
 
-If two or three sons have the same highest marks, you need to choose the younger one.*
+*If two or three sons have the same highest marks, you need to choose the younger one.*
 
 ```
 function whoseBicycle(diary1, diary2, diary3) {
@@ -63,11 +63,11 @@ function whoseBicycle(diary1, diary2, diary3) {
 ```
 
 **Nickname Generator**<br>
-*Write a function, nicknameGenerator that takes a string name as an argument and returns the first 3 or 4 letters as a nickname.
+*Write a function, nicknameGenerator that takes a string name as an argument and returns the first 3 or 4 letters as a nickname.*
 
-If the 3rd letter is a consonant, return the first 3 letters.
+*If the 3rd letter is a consonant, return the first 3 letters.*
 
-If the string is less than 4 characters, return "Error: Name too short".*
+*If the string is less than 4 characters, return "Error: Name too short".*
 
 ```
 function nicknameGenerator(name){
