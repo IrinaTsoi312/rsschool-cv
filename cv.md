@@ -38,11 +38,58 @@ Capable to learn, expand my current knowledge and walk through carrier pass as f
 ### **Code Examples**
 *from CodeWar*
 
+**Whose bicycle?**<br>
+*I am the father of three wonderful sons. before the beginning of the school year, I promised them that I would buy a bicycle for someone who would bring the best marks at the end of the school year. it's time to keep promises and I count on you.
+
+You have 3 input objects(school diaries) with school subjects and marks (1-10).
+
+If two or three sons have the same highest marks, you need to choose the younger one.*
+
+```
+function whoseBicycle(diary1, diary2, diary3) {
+  let marks = [getSum(Object.values(diary1)), getSum(Object.values(diary2)), 
+              getSum(Object.values(diary3))];
+  const results = [
+    "I need to buy a bicycle for my first son.",  
+    "I need to buy a bicycle for my second son.", 
+    "I need to buy a bicycle for my third son."
+  ];
+  function getSum(arr) {
+    return arr.reduce((sum, int) => sum + int, 0);
+  }
+  let res = marks.filter(num => Math.max(...marks) === num);
+  return results[marks.lastIndexOf(res[0])];
+}
+```
+
+**Nickname Generator**<br>
+*Write a function, nicknameGenerator that takes a string name as an argument and returns the first 3 or 4 letters as a nickname.
+
+If the 3rd letter is a consonant, return the first 3 letters.
+
+If the string is less than 4 characters, return "Error: Name too short".*
+
+```
+function nicknameGenerator(name){
+  let answer;
+  if(name.length > 3) {
+    if(name[2].match(/[aeiou]/gi)) {
+      answer = name.slice(0, 4);
+    } else if (name[2].match(/[bcdfghjklmnpqrstvwxysz]/gi)) {
+      answer = name.slice(0, 3);
+    }
+  } else if(name.length < 4) {
+    answer = "Error: Name too short";
+  }
+  return answer;
+}
+```
+
 **Clocky Mc Clock-Face**<br>
 *Given the angle (in degrees) of the hour-hand, return the time in 12 hour HH:MM format. Round down to the nearest minute.*
 
 ```
-var whatTimeIsIt = function(angle) {
+let whatTimeIsIt = function(angle) {
   let hours = Math.floor((angle * 2) / 60);
   let minute = Math.floor((angle * 2) - hours * 60);
     return `${addZero(toTwelve(hours))}:${addZero(minute)}`;
@@ -64,55 +111,12 @@ var whatTimeIsIt = function(angle) {
 }
 ```
 
-**Whose bicycle?**<br>
-*You have 3 input objects(school diaries) with school subjects and marks (1-10). 
-
-If two or three sons have the same highest marks, you need to choose the younger one.*
-
-```
-function whoseBicycle(diary1, diary2, diary3) {
-  let marks = [
-    getSum(Object.values(diary1)), 
-    getSum(Object.values(diary2)), 
-    getSum(Object.values(diary3))
-  ];
-  const results = [
-    "I need to buy a bicycle for my first son.",  
-    "I need to buy a bicycle for my second son.", 
-    "I need to buy a bicycle for my third son."
-  ];
-  function getSum(arr) {
-    return arr.reduce((sum, int) => sum + int, 0);
-  }
-  let res = marks.filter(num => Math.max(...marks) === num);
-  return results[marks.lastIndexOf(res[0])];
-}
-```
-
-**Detect Pangram**<br>
-*A pangram is a sentence that contains every single letter of the alphabet at least once. For example, the sentence "The quick brown fox jumps over the lazy dog" is a pangram, because it uses the letters A-Z at least once (case is irrelevant).
-
-Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.*
-
-```
-function isPangram(string){
-  let alphabet = "abcdefghijkmlnopqrstuvwxyz".split("");
-  let str = string.toLowerCase();
-  
-  for(let i = 0; i < alphabet.length; i++) {
-    if(str.search(alphabet[i]) < 0) {
-      return false;
-    }
-  }
-  return true;
-}
-```
-
 ---
 
 ### **Portfolio**
 
 [Plants website](https://rolling-scopes-school.github.io/irinatsoi312-JSFEPRESCHOOL2022Q4/plants/)<br>
+
 [Momentum app](https://rolling-scopes-school.github.io/irinatsoi312-JSFEPRESCHOOL2022Q4/momentum/)
 
 ---
