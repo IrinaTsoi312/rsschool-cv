@@ -27,7 +27,7 @@ Capable to learn, expand my current knowledge and walk through carrier pass as f
     - BEM
 + JavaScript 
     - React JS
-    - ARI
+    - API
 + Others 
     - Adobe Photoshop 
     - Figma
