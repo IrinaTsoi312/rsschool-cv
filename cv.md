@@ -81,3 +81,11 @@ function isPangram(string){
   return true;
 }
 ```
+
+### **Portfolio projects**
+
+**Plants web-site**
+[Plants web-site](https://rolling-scopes-school.github.io/irinatsoi312-JSFEPRESCHOOL2022Q4/plants/)<br>
+
+**Momentum App**
+[Momentum App](https://rolling-scopes-school.github.io/irinatsoi312-JSFEPRESCHOOL2022Q4/momentum/)<br>
