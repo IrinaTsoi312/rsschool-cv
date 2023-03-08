@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300;400;500;600;700&display=swap");
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background: hsl(0, 0%, 13%);
+  background: linear-gradient(90deg, hsl(0, 0%, 13%) 0%, hsl(0, 0%, 47%) 100%);
+  background: -webkit-linear-gradient(90deg, hsl(0, 0%, 13%) 0%, hsl(0, 0%, 47%) 100%);
+  box-shadow: 0px 14px 10px -6px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 14px 10px -6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 14px 10px -6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+header .nav-panel {
+  display: flex;
+}
+header .nav-panel #logo {
+  margin-right: 1rem;
+  padding: 0.3rem;
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  color: #fffb00;
+  font-size: 1rem;
+  text-align: center;
+  border: solid 1px #fffb00;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(255, 251, 0, 0.747);
+}
+header .nav-panel .nav-bar {
+  position: fixed;
+  top: -5rem;
+  left: 22rem;
+  z-index: -1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #444444;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #fffb00;
+  border-radius: 0 0 15px 15px;
+  opacity: 0;
+  transform: scale(0);
+  transition: 1s linear all;
+}
+header .nav-panel .nav-item {
+  list-style: none;
+  font-family: "Quicksand", sans-serif;
+  color: #fffb00;
+  padding: 1rem 0;
+}
+header .nav-panel .nav-item .nav-item__img {
+  display: none;
+}
+header #burger {
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .slide-down {
+    top: 3.8rem;
+    left: 0;
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@media (min-width: 768px) {
+  header .nav-panel {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .nav-panel #logo {
+    width: 7rem;
+    font-size: 1.2rem;
+  }
+  header .nav-panel .nav-bar {
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    opacity: 1;
+    transform: scale(1);
+    border: none;
+    background-color: transparent;
+  }
+  header .nav-panel .nav-bar .nav-item {
+    padding: 0 0.5rem;
+  }
+  header #burger {
+    display: none;
+  }
+}
+#about {
+  width: 20px;
+  height: 5rem;
+}
+
+section {
+  position: relative;
+}
+
+.text-block {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+  border: 2px solid #fffb00;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 320px;
+}
+
+#avatar {
+  position: absolute;
+  top: -1rem;
+  left: 0.8rem;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #fffb00;
+  border-radius: 50%;
+  box-shadow: 0px 14px 10px -6px rgba(0, 0, 0, 0.2);
+}
+
+.about__text-description {
+  font-size: 1rem;
+}
+.about__text-description .empty-block {
+  float: left;
+  width: 70px;
+  height: 42px;
+}
+
+.soft-skills-list .soft-skills-list-item {
+  padding: 0.5rem 0;
+}
+
+#skills {
+  height: 5rem;
+}
+
+.container .skills__list {
+  padding: 1rem 0;
+}
+.container .skills__list li {
+  position: relative;
+  padding: 0.2rem 0;
+  list-style: none;
+}
+.container .skills__list .list-main-point {
+  margin: 0.5rem 0;
+  color: #fffb00;
+  font-family: "Poiret One", cursive;
+  font-weight: 900;
+}
+.container .skills__list .skills-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.container .skills__list .skills-block .list-sub-point {
+  margin-bottom: 1rem;
+  padding: 0.3rem 0.3rem 0.3rem 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+  background: linear-gradient(0deg, rgb(43, 43, 43) 25%, rgb(89, 89, 89) 100%);
+  border: #fffb00 1px solid;
+  border-radius: 5px;
+  box-shadow: 0px 14px 10px -6px rgba(0, 0, 0, 0.2);
+}
+.container .skills__list .skills-block .bootstrap::before {
+  content: url("/dist/images/bootstrap-svgrepo-com.svg");
+  position: absolute;
+  top: 0.4rem;
+  left: 4px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.container .skills__list .skills-block .tailwind::before {
+  content: url("/dist/images/tailwind-svgrepo-com.svg");
+  position: absolute;
+  top: 0.4rem;
+  left: 4px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.container .skills__list .skills-block .sass::before {
+  content: url("/dist/images/sass-svgrepo-com.svg");
+  position: absolute;
+  top: 0.4rem;
+  left: 4px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.container .skills__list .skills-block .bem::before {
+  content: url("/dist/images/chevron-selector-horizontal-svgrepo-com.svg");
+  position: absolute;
+  top: 0.4rem;
+  left: 4px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.container .skills__list .skills-block .react::before {
+  content: url("/dist/images/react-svgrepo-com.svg");
+  position: absolute;
+  top: 0.4rem;
+  left: 4px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.container .skills__list .skills-block .api::before {
+  content: url("/dist/images/api-svgrepo-com.svg");
+  position: absolute;
+  top: 0.4rem;
+  left: 4px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.container .skills__list .skills-block .photoshop::before {
+  content: url("/dist/images/photoshop-svgrepo-com.svg");
+  position: absolute;
+  top: 0.4rem;
+  left: 4px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.container .skills__list .skills-block .figma::before {
+  content: url("/dist/images/figma-svgrepo-com.svg");
+  position: absolute;
+  top: 0.4rem;
+  left: 4px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.container .skills__list .skills-block .coreldraw::before {
+  content: url("/dist/images/corel-draw-2021.svg");
+  position: absolute;
+  top: 0.4rem;
+  left: 4px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+#portfolio {
+  height: 4rem;
+}
+
+.container .subheading {
+  padding: 1rem 0 0 0;
+  color: #fffb00;
+  font-family: "Quicksand", sans-serif;
+}
+.container .code-examples {
+  margin-bottom: 2rem;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+}
+.container .code-examples .code-example {
+  margin: 3rem 0 0 0;
+}
+.container .code-examples .code-example .example__heading {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  color: #000;
+  font-weight: 900;
+  background-color: #fffb00;
+}
+.container .code-examples .code-example .example__heading .sm-block {
+  display: block;
+  margin-right: 1rem;
+  width: 30px;
+  height: 100%;
+  background-color: #000;
+}
+.container .code-examples .code-example .example__task {
+  padding: 1rem 0;
+}
+.container .code-examples .code-example .example__task .par {
+  padding: 0.5rem 0;
+}
+.container .code-examples .code-example .code-block {
+  font-size: 0.58rem;
+  padding: 0.2rem;
+  background-color: #535353;
+}
+.container .portfolio-block .portfolio-link {
+  padding: 1rem 0;
+}
+.container .portfolio-block .portfolio-link .project-name {
+  display: block;
+  margin: 1rem 0;
+  padding: 0.3rem 0.5rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
+  background-color: #fffb00;
+  width: 11rem;
+  border-radius: 10px;
+}
+.container .portfolio-block .screenshot {
+  width: 100%;
+  max-width: 100%;
+}
+
+#education {
+  height: 4rem;
+}
+
+.container-edu .courses-block .courses-list {
+  padding: 1rem 0;
+}
+.container-edu .courses-block .courses-list .item {
+  padding: 1rem 0;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  list-style: none;
+}
+.container-edu .lang-list {
+  padding: 1rem 0;
+}
+.container-edu .lang-list .list__item {
+  padding: 1rem 0;
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+  list-style: none;
+  cursor: pointer;
+}
+
+#contacts {
+  height: 4rem;
+}
+
+.container-cont {
+  height: 4rem;
+}
+.container-cont .contacts-block {
+  padding: 1rem 0;
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+}
+.container-cont .contacts-block .category {
+  padding-right: 0.5rem;
+  text-align: right;
+}
+.container-cont .contacts-block .info {
+  color: #fffb00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  z-index: 10;
+  background-color: #444444;
+}
+
+li {
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:active {
+  color: #ffae00;
+}
+
+.block {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.57);
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+main {
+  padding-top: 4rem;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1rem 0;
+  width: 90%;
+}
+
+.heading {
+  padding-bottom: 0.5rem;
+  font-family: "Poiret One", cursive;
+  color: #fffb00;
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-align: center;
+}/*# sourceMappingURL=index.css.map */
