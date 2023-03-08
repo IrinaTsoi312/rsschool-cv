@@ -1,6 +1,6 @@
 # __Irina Tsoi__
 ### __Front-End Developer__
-![](https://github.com/IrinaTsoi312/rsschool-cv/blob/gh-pages/images/avataaars.png)
+![](https://github.com/IrinaTsoi312/rsschool-cv/blob/gh-pages/images/avatar.png)
 ---
 ### **Contacts**
 
@@ -84,10 +84,8 @@ function isPangram(string){
 
 ### **Portfolio projects**
 
-**Plants web-site**
 [Plants web-site](https://rolling-scopes-school.github.io/irinatsoi312-JSFEPRESCHOOL2022Q4/plants/)<br>
 
-**Momentum App**
 [Momentum App](https://rolling-scopes-school.github.io/irinatsoi312-JSFEPRESCHOOL2022Q4/momentum/)<br>
 
 ---
