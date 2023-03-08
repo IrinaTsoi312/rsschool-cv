@@ -89,3 +89,19 @@ function isPangram(string){
 
 **Momentum App**
 [Momentum App](https://rolling-scopes-school.github.io/irinatsoi312-JSFEPRESCHOOL2022Q4/momentum/)<br>
+
+---
+
+### **Courses**
+
++ [Certificate GeekBrains \- Intensive Introduction to Programming](https://github.com/IrinaTsoi312/rsschool-cv/blob/gh-pages/images/Certificate_GeekBrains.png)<br>
+
++ [Certificate Netology \- Basic HTML and CSS Course](https://github.com/IrinaTsoi312/rsschool-cv/blob/gh-pages/images/Certificate%20Netology.png)
+
+---
+
+### **Languages**
+
++ English \- C1\-C2 level (Advanced\-Proficient) [EF SET](https://www.efset.org)<br>
+[EF SET Score](https://github.com/IrinaTsoi312/rsschool-cv/blob/gh-pages/images/Free-English-test-EF-SET-Quick-Check.png)
++ Russian \- Native
