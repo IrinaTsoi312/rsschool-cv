@@ -9,50 +9,51 @@
 </head>
 <body>
   <header>
+    <img src="./images/arrow-circle-right-svgrepo-com.svg" alt="Burger menu icon" id="burger">
     <nav class="nav-panel">
-      <h1 id="logo">Irina Tsoi</h1>
+      <div class="logo-block">
+        <img src="./images/avatar.png" alt="avatar" id="avatar">
+        <h1 id="logo">Irina Tsoi</h1>
+      </div>
       <ul class="nav-bar">
         <li class="nav-item">
           <a href="#about" class="nav-link">
-            <img src="../images/basic-information-svgrepo-com.svg" alt="about icon" class="nav-item__img">
+            <img src="./images/basic-information-svgrepo-com.svg" alt="about icon" class="nav-item__img">
           </a>
           <a href="#about" class="nav-link link">ABOUT</a>
         </li>
         <li class="nav-item">
           <a href="#skills" class="nav-link icon">
-            <img src="../dist/images/skills-svgrepo-com.svg" alt="skills icon" class="nav-item__img">
+            <img src="./images/skills-svgrepo-com.svg" alt="skills icon" class="nav-item__img">
           </a>
           <a href="#skills" class="nav-link link">SKILLS</a>
         </li>
         <li class="nav-item">
           <a href="#portfolio" class="nav-link icon">
-            <img src="../dist/images/album-svgrepo-com.svg" alt="portfolio icon" class="nav-item__img">
+            <img src="./images/album-svgrepo-com.svg" alt="portfolio icon" class="nav-item__img">
           </a>
           <a href="#portfolio" class="nav-link link">PORTFOLIO</a>
         </li>
         <li class="nav-item">
           <a href="#education" class="nav-link icon">
-            <img src="../dist/images/education-cap-svgrepo-com.svg" alt="education icon" class="nav-item__img">
+            <img src="./images/education-cap-svgrepo-com.svg" alt="education icon" class="nav-item__img">
           </a>
           <a href="#education" class="nav-link link">EDUCATION</a>
         </li>
         <li class="nav-item">
           <a href="#contacts" class="nav-link icon">
-            <img src="../dist/images/contact-papperplane-communication-svgrepo-com.svg" alt="contact icon" class="nav-item__img">
+            <img src="./images/contact-papperplane-communication-svgrepo-com.svg" alt="contact icon" class="nav-item__img">
           </a>
           <a href="#contacts" class="nav-link link">CONTACTS</a>
         </li>
       </ul>
     </nav>
-    <img src="./images/burger-menu-right-svgrepo-com.svg" alt="Burger menu icon" id="burger">
   </header>
   <main>
-    <div id="about"></div>
+    <!-- <div id="about"></div> -->
     <section>
-        <div class="container">
-          <img src="../dist/images/avatar.png" alt="avatar" id="avatar">
+        <div class="container-about container">
           <div class="about__text-description text-block block">
-            <div class="empty-block"></div>
             <h2 class="description-heading heading">
               <strong>About Me</strong>
             </h2>
@@ -79,9 +80,9 @@
           </div>
         </div>
     </section>
-    <div id="skills"></div>
+    <!-- <div id="skills"></div> -->
     <section>
-      <div class="container">
+      <div class="container-skills container">
         <h2 class="heading">
           <strong>Skills</strong>
         </h2>
@@ -112,9 +113,9 @@
         </ul>
       </div>
     </section>
-    <div id="portfolio"></div>
+    <!-- <div id="portfolio"></div> -->
     <section>
-      <div class="container">
+      <div class="container-portfolio container">
         <h2 class="heading">Portfolio</h2>
         <div class="code-examples">
           <h3 class="subheading">Code Examples</h3>
@@ -215,7 +216,7 @@ let whatTimeIsIt = function(angle) {
         </div>
       </div>
     </section>
-    <div id="education"></div>
+    <!-- <div id="education"></div> -->
     <section>
       <div class="container-edu container">
         <h2 class="heading">Education</h2>
@@ -257,7 +258,7 @@ let whatTimeIsIt = function(angle) {
         </div>
       </div>
     </section>
-    <div id="contacts"></div>
+    <!-- <div id="contacts"></div> -->
     <section>
       <div class="container-cont container">
       <h2 class="heading"><strong>Contacts</strong></h2>
