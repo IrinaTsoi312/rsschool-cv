@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+  <header>
+    <img src="./images/arrow-circle-right-svgrepo-com.svg" alt="Burger menu icon" id="burger">
+    <nav class="nav-panel">
+      <div class="logo-block">
+        <img src="./images/avatar.png" alt="avatar" id="avatar">
+        <h1 id="logo">Irina Tsoi</h1>
+      </div>
+      <section  id="contacts">
+        <h2 class="heading"><strong>Contacts</strong></h2>
+        <div class="contacts-block">
+          <a href="mailto:irinatsoi312@gmail.com" aria-label="email link">
+            <img src="./images/email-9-svgrepo-com.svg" alt="email icon">
+          </a>
+          <a href="https://github.com/IrinaTsoi312">
+            <img src="./images/github-svgrepo-com.svg" alt="github icon" aria-label="github account">
+          </a>
+          <a href="https://t.me/IrinaT312" aria-label="telegram link">
+            <img src="./images/telegram-svgrepo-com.svg" alt="telegram icon">
+          </a>
+        </div>
+      </section>
+      <ul class="nav-bar">
+        <li class="nav-item">
+          <a href="#about" class="nav-link" aria-label="anchor to about section">
+            <img src="./images/basic-information-svgrepo-com.svg" alt="about icon" class="nav-item__img">
+          </a>
+          <a href="#about" class="nav-link link" aria-label="link to about section">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a href="#skills" class="nav-link icon" aria-label="anchor to skills section">
+            <img src="./images/skills-svgrepo-com.svg" alt="skills icon" class="nav-item__img">
+          </a>
+          <a href="#skills" class="nav-link link" aria-label="link to skills section">SKILLS</a>
+        </li>
+        <li class="nav-item">
+          <a href="#portfolio" class="nav-link icon" aria-label="anchor toportfolio section">
+            <img src="./images/album-svgrepo-com.svg" alt="portfolio icon" class="nav-item__img">
+          </a>
+          <a href="#portfolio" class="nav-link link" aria-label="link to portfolio section">PORTFOLIO</a>
+        </li>
+        <li class="nav-item">
+          <a href="#education" class="nav-link icon" aria-label="anchor to education section">
+            <img src="./images/education-cap-svgrepo-com.svg" alt="education icon" class="nav-item__img">
+          </a>
+          <a href="#education" class="nav-link link" aria-label="link to education section">EDUCATION</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="main-container">
+      <section id="about">
+        <div class="container-about container">
+          <h2 class="description-heading heading">
+            <strong>About Me</strong>
+          </h2>
+          <div class="about__text-description text-block block">
+            <p class="description-text">
+                I am a <strong>Front-End Developer</strong> with practical skills and experience in developing responsive web-sites with effective functionality and usability, individually and as a part of a team.
+            </p>
+            <img src="./images/web-developing.png" alt="desktop screen" class="description-img">
+          </div>
+          <div class="about__text-soft-skills text-block block">
+            <h3 class="about-subheading">What will you get, if You hire me</h3>
+            <ul class="soft-skills-list">
+              <li class="soft-skills-list-item">
+                Responsible and Adaptable worker
+              </li>
+              <li class="soft-skills-list-item">
+                Capable to Learn New Technologies and Skills
+              </li>
+              <li class="soft-skills-list-item">
+                Efficient Work with Good Time Management
+              </li>
+              <li class="soft-skills-list-item">
+                Good Interpersonal Skills
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="container-skills container">
+          <h2 class="heading">
+            <strong>Skills</strong>
+          </h2>
+          <ul class="skills__list">
+            <li class="list-main-point html-css">
+              HTML5, CSS
+              <ul class="skills-block">
+                <li class="list-sub-point bootstrap">Bootstrap</li>
+                <li class="list-sub-point tailwind">Tailwind</li>
+                <li class="list-sub-point sass">Sass</li>
+                <li class="list-sub-point bem">BEM</li>
+              </ul>
+            </li>
+            <li class="list-main-point js">
+              JAVASCRIPT
+              <ul class="skills-block">
+                <li class="list-sub-point react">React JS</li>
+                <li class="list-sub-point api">API</li>
+              </ul>
+            </li>
+            <li class="list-main-point">OTHERS
+              <ul class="skills-block">
+                <li class="list-sub-point photoshop">Adobe Photoshop</li>
+                <li class="list-sub-point figma">Figma</li>
+                <li class="list-sub-point coreldraw">CorelDraw</li>
+              </ul>
+            </li>
+          </ul>
+          <img src="./images/wesite-html.png" alt="background image" class="skills__img">
+        </div>
+      </section>
+      <section id="portfolio">
+        <div class="container-portfolio container">
+          <h2 class="heading">Portfolio</h2>
+          <div class="code-examples">
+            <h3 class="subheading">Code Examples</h3>
+            <div class="code-example">
+              <div class="example__heading"><span class="sm-block"></span>Whose bicycle?</div>
+              <div class="example__task">
+                <p class="par">You have 3 input objects(school diaries) with school subjects and marks (1-10).</p>
+                <p class="par">If two or three sons have the same highest marks, you need to choose the younger one.</p>
+              </div>
+              <pre class="code-block">
+  function whoseBicycle(diary1, diary2, diary3) {
+    let marks = [
+      getSum(Object.values(diary1)),
+      getSum(Object.values(diary2)),
+      getSum(Object.values(diary3))
+    ];
+    const results = [
+      "I need to buy a bicycle for my first son.",
+      "I need to buy a bicycle for my second son.",
+      "I need to buy a bicycle for my third son."
+    ];
+    function getSum(arr) {
+      return arr.reduce((sum, int) =&#62; sum + int, 0);
+    }
+    let res = marks.filter(num =&#62; Math.max(...marks) === num);
+    return results[marks.lastIndexOf(res[0])];
+  }
+              </pre>
+            </div>
+            <div class="code-example">
+              <div class="example__heading"><span class="sm-block"></span>Nickname Generator</div>
+              <div class="example__task">
+                <p class="par">Write a function, nicknameGenerator that takes a string name as an argument and returns the first 3 or 4 letters as a nickname.</p>
+                <p class="par">If the 3rd letter is a consonant, return the first 3 letters.</p>
+                <p class="par">If the string is less than 4 characters, return "Error: Name too short".</p>
+              </div>
+              <pre class="code-block">
+  function nicknameGenerator(name){
+    let answer;
+    if(name.length &#62; 3) {
+      if(name[2].match(/[aeiou]/gi)) {
+        answer = name.slice(0, 4);
+      } else if (name[2].match(/[bcdfghjklmnpqrstvwxysz]/gi)) {
+        answer = name.slice(0, 3);
+      }
+    } else if(name.length &#60; 4) {
+      answer = "Error: Name too short";
+    }
+    return answer;
+  }
+              </pre>
+            </div>
+            <div class="code-example">
+              <div class="example__heading"><span class="sm-block"></span>Clocky Mc Clock-Face</div>
+              <div class="example__task">
+                <p class="par">Given the angle (in degrees) of the hour-hand, return the time in 12 hour HH:MM format. Round down to the nearest minute.</p>
+              </div>
+              <pre class="code-block">
+  let whatTimeIsIt = function(angle) {
+    let hours = Math.floor((angle * 2) / 60);
+    let minute = Math.floor((angle * 2) - hours * 60);
+    return `${addZero(toTwelve(hours))}:${addZero(minute)}`;
+
+    function toTwelve(num) {
+      if(num === 0) {
+        return 12;
+      } else {
+        return num;
+      }
+    }
+
+    function addZero(num) {
+      if(num.toString().length &#62; 2) {
+        return "0" + num;
+      } else {
+        return num;
+      }
+    }
+  }
+              </pre>
+            </div>
+          </div>
+          <div class="portfolio-block">
+            <h3 class="subheading">Projects</h3>
+            <div class="potrfolio">
+              <div class="portfolio-item">
+                <p class="portfolio-link">
+                  <a href="https://rolling-scopes-school.github.io/irinatsoi312-JSFEPRESCHOOL2022Q4/plants/" class="project-name">Plants web-sites</a>
+                </p>
+                <img src="./images/screenshots/Plants-desktop.png" alt="website screenshot" class="screenshot">
+              </div>
+              <div class="portfolio-item">
+                <p class="portfolio-link">
+                  <a href="https://rolling-scopes-school.github.io/irinatsoi312-JSFEPRESCHOOL2022Q4/momentum/" class="project-name">Momentum App</a>
+                </p>
+                <img src="./images/screenshots/momentum.png" alt="website screenshot" class="screenshot">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="education">
+        <div class="container-edu container">
+          <h2 class="heading">Education</h2>
+          <div class="courses-block">
+            <h3 class="subheading">Courses</h3>
+            <ul class="courses-list">
+              <li class="item">
+                <p class="item__link">
+                  RS School - JavaScript - Front-end 2023Q1 stage#1
+                </p>
+              </li>
+              <li class="item">
+                <p class="item__link">
+                  RS School - JavaScript - Front-end 2022Q4 stage#0
+                </p>
+              </li>
+              <li class="item">
+                <a href="images/Certificate_GeekBrains.png" class="item__link">
+                  GeekBrains - Intensive Introduction to Programming
+                </a>
+              </li>
+              <li class="item">
+                <a href="images/Certificate_Netology.png" class="item__link">
+                  Netology - Basic HTML and CSS Course
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="language">
+            <h3 class="subheading">Language</h3>
+            <ul class="lang-list">
+              <li class="list__item">
+                <a href="images/Free-English-test-EF-SET-Quick-Check.png">English - C1-C2 level (Advanced-Proficient)</a> <a href="https://www.efset.org">EF SET</a>
+              </li>
+              <li class="list__item">
+                Russian - Native
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="container"></div>
+  </footer>
+  <!-- <script src="./index.js"></script> -->
+</body>
+</html>
