@@ -140,6 +140,7 @@
               </ul>
             </li>
           </ul>
+          <img src="./images/wesite-html.png" alt="background image" class="skills__img">
         </div>
       </section>
       <section id="portfolio">
@@ -154,23 +155,23 @@
                 <p class="par">If two or three sons have the same highest marks, you need to choose the younger one.</p>
               </div>
               <pre class="code-block">
-      function whoseBicycle(diary1, diary2, diary3) {
-        let marks = [
+  function whoseBicycle(diary1, diary2, diary3) {
+    let marks = [
       getSum(Object.values(diary1)),
       getSum(Object.values(diary2)),
       getSum(Object.values(diary3))
-        ];
-        const results = [
+    ];
+    const results = [
       "I need to buy a bicycle for my first son.",
       "I need to buy a bicycle for my second son.",
       "I need to buy a bicycle for my third son."
-        ];
-        function getSum(arr) {
+    ];
+    function getSum(arr) {
       return arr.reduce((sum, int) =&#62; sum + int, 0);
-        }
-        let res = marks.filter(num =&#62; Math.max(...marks) === num);
-        return results[marks.lastIndexOf(res[0])];
-      }
+    }
+    let res = marks.filter(num =&#62; Math.max(...marks) === num);
+    return results[marks.lastIndexOf(res[0])];
+  }
               </pre>
             </div>
             <div class="code-example">
@@ -181,19 +182,19 @@
                 <p class="par">If the string is less than 4 characters, return "Error: Name too short".</p>
               </div>
               <pre class="code-block">
-      function nicknameGenerator(name){
-        let answer;
-        if(name.length &#62; 3) {
+  function nicknameGenerator(name){
+    let answer;
+    if(name.length &#62; 3) {
       if(name[2].match(/[aeiou]/gi)) {
         answer = name.slice(0, 4);
       } else if (name[2].match(/[bcdfghjklmnpqrstvwxysz]/gi)) {
         answer = name.slice(0, 3);
       }
-        } else if(name.length &#60; 4) {
+    } else if(name.length &#60; 4) {
       answer = "Error: Name too short";
-        }
-        return answer;
-      }
+    }
+    return answer;
+  }
               </pre>
             </div>
             <div class="code-example">
@@ -202,26 +203,27 @@
                 <p class="par">Given the angle (in degrees) of the hour-hand, return the time in 12 hour HH:MM format. Round down to the nearest minute.</p>
               </div>
               <pre class="code-block">
-      let whatTimeIsIt = function(angle) {
-        let hours = Math.floor((angle * 2) / 60);
-        let minute = Math.floor((angle * 2) - hours * 60);
-      return `${addZero(toTwelve(hours))}:${addZero(minute)}`;
-        function toTwelve(num) {
+  let whatTimeIsIt = function(angle) {
+    let hours = Math.floor((angle * 2) / 60);
+    let minute = Math.floor((angle * 2) - hours * 60);
+    return `${addZero(toTwelve(hours))}:${addZero(minute)}`;
+
+    function toTwelve(num) {
       if(num === 0) {
         return 12;
       } else {
         return num;
       }
-        }
-        function addZero(num) {
-      console.log(num.toString().length)
+    }
+
+    function addZero(num) {
       if(num.toString().length &#62; 2) {
         return "0" + num;
       } else {
         return num;
       }
-        }
-      }
+    }
+  }
               </pre>
             </div>
           </div>

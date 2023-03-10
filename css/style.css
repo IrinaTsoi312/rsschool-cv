@@ -12,6 +12,7 @@
 /* VARIABLES */
 :root {
   --yellow: #fffb00;
+  --gradient: linear-gradient(0deg, rgb(43, 43, 43) 25%, rgb(89, 89, 89) 100%);
   --box-shadow: 0px 14px 10px -6px rgba(0, 0, 0, 0.2);
 }
 
@@ -239,7 +240,142 @@ header {
 }
 
 /* Skills */
+.container-skills {
+  position: relative;
+}
 
+.skills__list {
+  padding: 1rem 0;
+}
+
+.skills__img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+  width: 100%;
+  max-width: 300px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.skills__list li {
+  position: relative;
+  margin: 2rem 0;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.list-main-point {
+  margin: 0.5rem 0;
+  color: #fffb00;
+  font-family: "Poiret One", cursive;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.skills-block {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.list-sub-point {
+  margin-bottom: 1rem;
+  padding: 0.3rem 0.3rem 0.3rem 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+  background: var(--gradient);
+  border: #fffb00 1px solid;
+  border-radius: 5px;
+  box-shadow: 0px 14px 10px -6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.bootstrap::before {
+  content: url("../images/bootstrap-svgrepo-com.svg");
+  position: absolute;
+  top: 0.5rem;
+  left: 10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.tailwind::before {
+  content: url("../images/tailwind-svgrepo-com.svg");
+  position: absolute;
+  top: 0.5rem;
+  left: 10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.sass::before {
+  content: url("../images/sass-svgrepo-com.svg");
+  position: absolute;
+  top: 0.5rem;
+  left: 10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.bem::before {
+  content: url("../images/chevron-selector-horizontal-svgrepo-com.svg");
+  position: absolute;
+  top: 0.5rem;
+  left: 10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.react::before {
+  content: url("../images/react-svgrepo-com.svg");
+  position: absolute;
+  top: 0.5rem;
+  left: 10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.api::before {
+  content: url("../images/api-svgrepo-com.svg");
+  position: absolute;
+  top: 0.5rem;
+  left: 10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.photoshop::before {
+  content: url("../images/photoshop-svgrepo-com.svg");
+  position: absolute;
+  top: 0.5rem;
+  left: 10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.figma::before {
+  content: url("../images/figma-svgrepo-com.svg");
+  position: absolute;
+  top: 0.5rem;
+  left: 10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.coreldraw::before {
+  content: url("../images/corel-draw-2021.svg");
+  position: absolute;
+  top: 0.5rem;
+  left: 10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
 
 /* Porfolio */
 #portfolio {}
