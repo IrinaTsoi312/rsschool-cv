@@ -153,9 +153,9 @@ header {
   color: #000;
 }
 
-.info {
-  padding-left: 0.5rem;
-  font-weight: 900;
+.contacts-block a {
+  display: inline-block;
+  margin: 0 0.5rem;
 }
 
 .nav-bar {
@@ -421,8 +421,6 @@ header {
   justify-content: space-around;
 }
 
-.portfolio-item {}
-
 .project-name {
   font-size: 1.5rem;
 }
@@ -434,17 +432,18 @@ header {
 }
 
 /* Education */
-.courses {}
 
 .item {
   margin: 1rem 0;
   padding-left: 1rem;
+  font-size: 1.2rem;
   list-style-type: "\1F56E";
 }
 
 .list__item {
   margin: 1rem 0;
   padding-left: 0.5rem;
+  font-size: 1.2rem;
   list-style-type: "\1F310";
 }
 
